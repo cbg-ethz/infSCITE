@@ -44,11 +44,11 @@ To compile the C/C++ program, open a terminal and go to the folder containing th
 
 This writes a file named `infSCITE`. With some compiler versions you may need to use the option `-std=c++11`.
 
-Assuming the sample data file pat_2.csvis located in the same folder, `infSCITE` can then be executed as follows
+Assuming the sample data file pat_2.csv is located in the same folder, `infSCITE` can then be executed as follows
 
 	./infSCITE -i pat_2.csv -n 16 -m 115 -r 1 -l 700000 -fd 3.45e-3 -ad 1.46e-1 -s -e .2 -p 10000 -d -rec 13
 
-This call returns the MAP tree and samples from the posterior distribution for the given dataset under the assumption that the mutation at position 13 has a recurrence. With this call **&#8734;SCITE** also learns the false negative and doublet rates from the data. See below for other program options.
+This call returns the MAP tree and samples from the posterior distribution for the given dataset under the assumption that the mutation at position 13 in the data matrix has a recurrence. With this call **&#8734;SCITE** also learns the false negative and doublet rates from the data. See below for other program options.
 
 ### Linux/Unix
 
@@ -56,13 +56,13 @@ To compile the C/C++ program, open a terminal and go to the folder containing th
 
 	g++ *.cpp -o infSCITE
 	
-This writes a file named `infSCITE`. With older compiler versions you may need to use the option `-std=c++11`.
+This writes a file named `infSCITE`. With some compiler versions you may need to use the option `-std=c++11`.
 
-Assuming the sample data file pat_2.csvis located in the same folder, `infSCITE` can then be executed as follows
+Assuming the sample data file pat_2.csv is located in the same folder, `infSCITE` can then be executed as follows
 
 	./infSCITE -i pat_2.csv -n 16 -m 115 -r 1 -l 700000 -fd 3.45e-3 -ad 1.46e-1 -s -e .2 -p 10000 -d -rec 13
 
-This call returns the MAP tree and samples from the posterior distribution for the given dataset under the assumption that the mutation at position 13 has a recurrence. With this call **&#8734;SCITE** also learns the false negative and doublet rates from the data. See below for other program options.
+This call returns the MAP tree and samples from the posterior distribution for the given dataset under the assumption that the mutation at position 13 in the data matrix has a recurrence. With this call **&#8734;SCITE** also learns the false negative and doublet rates from the data. See below for other program options.
 
 
 ##  Input Files
@@ -286,12 +286,6 @@ When combined with `-transpose` there are only two move types, *prune and re-att
 * output.h
 
 
-* findBestTrees.cpp doublets.cpp recMut.cpp mcmc.cpp mcmcBinTreeMove.cpp mcmcTreeMove.cpp scoreBinTree.cpp scoreTree.cpp trees.cpp treelist.cpp rand.cpp matrices.cpp
-
--i "/Users/jahnka/Desktop/MykolaProject/data/TNBC/TNBC.txt" -n 547 -m 16 -r 2 -l 500 -g 1 -fd 6.04e-6 -ad 0.11545 0.11545 -cc 1.299164e-05 -names "/Users/jahnka/Desktop/MykolaProject/data/TNBC/TNBC.geneNames" -e 0.1 -transpose
-
-
-g++ findBestTrees.cpp doublets.cpp recMut.cpp mcmc.cpp mcmcBinTreeMove.cpp mcmcTreeMove.cpp scoreBinTree.cpp scoreTree.cpp trees.cpp treelist.cpp rand.cpp matrices.cpp output.cpp binTree_output.cpp -std=c++11 -o SCITE
 
 
 
