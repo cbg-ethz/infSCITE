@@ -29,7 +29,7 @@ _Kuipers, J., Jahn, K., Raphael, B. J., & Beerenwinkel, N. (2017). Single-cell s
 ## Availability
 ---------------
 
-**&#8734;SCITE** is freely available under a GPL3 license at https://gitlab.com/jahnka/infiniteSCITE
+**&#8734;SCITE** is freely available under a GPL3 license at https://github.com/cbg-ethz/infSCITE
 
 ##    How to run **&#8734;SCITE**
 --------------------------
