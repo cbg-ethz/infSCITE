@@ -64,7 +64,7 @@ string getMutTreeGraphVizString(int* parentVector, int parentVectorSize, vector<
 string mutTreeNodes(vector<string> nodeLabels){
 	stringstream nodes;
 	for(int i=0; i<nodeLabels.size(); i++){
-		nodes << i << "[label=\" << nodeLabels[i] << \"];\n";
+		nodes << i << "[label=\"" << nodeLabels[i] << "\"];\n";
 	}
 	return nodes.str();
 }
@@ -74,7 +74,7 @@ string mutTreeNodes(vector<string> nodeLabels){
 string mutTreeSamples(vector<string> sampleLabels){
 	stringstream nodes;
 	for(int i=0; i<sampleLabels.size(); i++){
-		nodes << "s_" << i << "[label=\" << sampleLabels[i] << \"];\n";
+		nodes << "s_" << i << "[label=\"" << sampleLabels[i] << "\"];\n";
 	}
 	return nodes.str();
 }
